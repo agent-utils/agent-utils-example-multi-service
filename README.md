@@ -16,7 +16,7 @@ in each response fall against the *same* balance regardless of which service you
 ## What this demonstrates
 
 One Bearer token, one account, one $5 activation across every service. See the
-[agent-utils hub](https://codeberg.org/agent-utils/agent-utils) for the full platform.
+[agent-utils hub](https://github.com/agent-utils/agent-utils) for the full platform.
 
 ## License
 
