@@ -1,8 +1,10 @@
-# One account, three services: memory + mutex + idempotency
+# One account, every service: idempotency + mutex + memory + task board + pub/sub
 
-The agent_utils moat, made runnable: a **single token** coordinates a job across three
-MCP services - idempotency (run once), mutex (exclusive access), memory (shared state) -
-all drawing from **one credit pool**. A single-purpose competitor can't do this.
+The agent_utils moat, made runnable: a **single token** coordinates a job across five
+services on the swarm server - idempotency (run once), mutex (exclusive access), memory
+(shared state), task board (hand off work), pub/sub (tell the others) - and then uses the
+extensions server too, all drawing from **one credit pool**. A single-purpose competitor
+can't do this.
 
 ## Run
 
@@ -11,11 +13,11 @@ all drawing from **one credit pool**. A single-purpose competitor can't do this.
 ```
 
 No signup: the first call auto-provisions a free trial. Watch the `_meta.credits_remaining`
-in each response fall against the *same* balance regardless of which service you hit.
+in each response fall against the *same* balance regardless of which service or server you hit.
 
 ## What this demonstrates
 
-One Bearer token, one account, one $5 activation across every service. See the
+One Bearer token, one account, one $5 activation across both servers. See the
 [agent-utils hub](https://github.com/agent-utils/agent-utils) for the full platform.
 
 ## License
