@@ -22,6 +22,10 @@ in each response fall against the *same* balance regardless of which service or 
 One Bearer token, one account, one $5 activation across both servers. See the
 [agent-utils hub](https://github.com/agent-utils/agent-utils) for the full platform.
 
+## Contact
+
+Questions, bugs or account issues: support@agent-utils.ai
+
 ## License
 
 MIT. agent_utils is a hosted commercial service; this example is not the service.
